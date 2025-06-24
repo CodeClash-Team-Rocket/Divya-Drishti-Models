@@ -11,7 +11,6 @@ Divya Drishti (Sanskrit for Divine Vision) is a dual-module assistive technology
 
 🦯 Obstacle Detection: Detects obstacles in real-time and provides voice-guided navigation instructions.
 ✋ Sign Language Detection: Recognizes A-Z hand signs, constructs sentences, and converts them to speech.
-🌐 Scalable API: FastAPI-based REST endpoint for remote image-based detection.
 ⚡ Accessible & Affordable: Built with open-source tools for widespread adoption.
 
 
@@ -38,33 +37,6 @@ Real-time AI system that detects obstacles and provides audio navigation guidanc
 ⚙️ REST API: Upload images for detection results and navigation advice.
 🚀 GPU Support: CUDA acceleration for faster processing.
 
-📦 Tech Stack
-
-
-
-Component
-Technology
-
-
-
-Model
-YOLOv5 (PyTorch)
-
-
-Voice Engine
-pyttsx3
-
-
-Backend API
-FastAPI, Uvicorn
-
-
-Libraries
-OpenCV, Pillow, NumPy, Pandas
-
-
-Deployment
-Local / Cloud-ready
 
 
 📸 Sample Output
@@ -84,8 +56,6 @@ cd Divya-Drishti-Models/Obstacle\ Detection
 pip install -r requirements.txt
 python main.py
 
-📡 Run API
-uvicorn api:app --reload
 
 
 ✋ Sign Language Detection
@@ -100,33 +70,6 @@ Real-time hand sign recognition (A-Z) with sentence construction and speech outp
 🧠 Smart Suggestions: PyEnchant-based spell-checker for accurate word output.
 🛑 Emergency SOS: Optional button for critical alerts.
 
-⚙️ Tech Stack
-
-
-
-Component
-Technology
-
-
-
-Model
-TensorFlow/Keras (CNN)
-
-
-Hand Detection
-CVZone, OpenCV
-
-
-GUI
-Tkinter
-
-
-Voice Engine
-pyttsx3
-
-
-Spell Check
-PyEnchant
 
 
 📸 Sample Output
@@ -172,63 +115,9 @@ Optional: CUDA-enabled GPU for faster processing
 🗣️ Multilingual TTS: Support for regional languages.
 📱 Mobile App: Deploy API to Android for portable access.
 📏 Depth Estimation: Calculate obstacle distances for precise guidance.
-🤖 Wearable Device: Raspberry Pi-based compact solution for portability.
+.
 
 
-🎥 Demo Videos
-
-
-
-
-
-
-
-🦯 Obstacle Detection
-Watch Now
-
-
-✋ Sign Language Detection
-Watch Now
-
-
-
-🤝 Team & Credits
-Team Rocket at CodeClash HackathonWe’re a group of innovators passionate about leveraging AI to create inclusive, impactful solutions. Divya Drishti is our vision for a more accessible world.
-
-  🌟 Hackathon Judges: Ready to experience Divya Drishti? Test our live demos or explore the API. Let’s empower accessibility together!
-
-
-
-
-  
-
-
-
-  Made with ❤️ for inclusivity and innovation.
-
----
-
-## 🎯 Project Overview
-
-**Divya Drishti** (Sanskrit for *Divine Vision*) is a dual-module assistive technology suite designed to enhance independence for visually and hearing-impaired individuals. Powered by **YOLOv5** for obstacle detection and **TensorFlow/Keras** for sign language recognition, it delivers real-time audio feedback for navigation and communication.
-
-- 🦯 **Obstacle Detection**: Detects obstacles in real-time and provides voice-guided navigation instructions.
-- ✋ **Sign Language Detection**: Recognizes A-Z hand signs, constructs sentences, and converts them to speech.
-- 🌐 **Scalable API**: FastAPI-based REST endpoint for remote image-based detection.
-- ⚡ **Accessible & Affordable**: Built with open-source tools for widespread adoption.
-
----
-
-## 🧭 Navigation
-
-- [👁️ Obstacle Detection](#-obstacle-detection)
-- [✋ Sign Language Detection](#-sign-language-detection)
-- [⚙️ Setup Instructions](#-setup-instructions)
-- [📈 Future Enhancements](#-future-enhancements)
-- [🎥 Demo Videos](#-demo-videos)
-- [🤝 Team & Credits](#-team--credits)
-
----
 
 ## 👁️ Obstacle Detection
 
@@ -275,13 +164,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 📡 Run API
 
-```bash
-uvicorn api:app --reload
-```
-
----
 
 ## ✋ Sign Language Detection
 
@@ -339,7 +222,7 @@ python final_preds.py
 3. **Run Modules**:
    - Obstacle Detection: `cd Obstacle\ Detection && python main.py`
    - Sign Language Detection: `cd Sign\ Language\ Detection && python final_preds.py`
-   - API Server: `cd Obstacle\ Detection && uvicorn api:app --reload`
+   
 
 **Requirements**:
 - Python 3.8+ (Obstacle Detection), Python 3.10 (Sign Language Detection)
